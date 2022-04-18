@@ -1,0 +1,144 @@
+node.js = 서버컴퓨터에서 동작 가능한 js이다
+(node.js가 서버컴퓨터에서 동작할 수 있는 것이지 서버는 아니다)
+
+서버(SERVER) => 전달자(프론트에서 <=> 백으로)
+프론트가 서버에 요청할 수 있는 4가지 (요청만 할 수 있고 제공하지 못한다)
+1. 읽기요청 (GET) - ex) 게시판내용, 마이페이지정보, 페이지 등
+2. 쓰기요청 (POST) - ex) 로그인, 글쓰기 등
+3. 수정요청 (PUT) - ex) 마이페이지정보, 게시판정보 등
+4. 삭제요청 (DELETE) ex) 글삭제, 회원탈퇴 등
+
+node.js 장점 : 논블록킹(non-blocking) = 짧은 작업이 무한정 기다리지 않는다.
+ a작업 : 작업 예상시간 10시간 => 10:00 요청됨, 20:00 완료
+ b작업 : 작업 예상시간 1분 => 10:05 요청됨, 20:01 완료
+ 이것이 공정한 효율성을 고려하지 않은 블록킹.
+ 먼저 a를 작업하더라도 b라는 작업이 들어오면 효율성을 고려하여 b작업을 처리
+ 한다, 이것이 논블록킹
+
+-------------------------------------------------------------------------------
+
+server라는 폴더에 notice폴더를 서버폴더로 생성
+
+package.json만들기 (package.json 은 환경설정 파일이다.)
+터미널에서
+npm init
+
+package name => enter
+version => enter
+처럼 다른 것들은 다 안넣어도 되지만 entry point는 , 즉 서버파일명은 정확하게 기재.
+수업에서 notice서버의 파일서버이름을 server.js로 함
+
+express 라이브러리 설치
+터미널에서 
+npm install express
+
+그후 notice폴더에서 직접 server.js로 파일 생성.
+server.js파일에서 app이라는 개체를 만든다
+const express = require('express');
+const app = express();
+
+app.listen(포트번호, 콜백함수); (콜백함수 = 함수안에 함수가 들어가는 것)
+app.listen(8080, function(요청, 응답){
+
+})
+
+node.js 서버오픈
+터미널에서
+node server.js
+
+서버측에서 코드변경을하면 서버를 종료(Ctrl + c)하고 
+다시 터미널에에서 node server.js 를 해줘야 적용된다.
+
+sendFile( ); 는 express에서 제공하는 메서드
+sendFile( 현재위치 + '파일' );
+sendFile( __ + '파일' );
+ 언더바 2개 __
+ex) 응답.sendFile( __dirname + '/index.html' );
+__dirname => 디렉션네임
+-------------------------------------------------------------------------------
+
+bbs라는 서버폴더 생성
+
+package.json만들기 (package.json 은 환경설정 파일이다.)
+터미널에서
+npm init
+
+bbs라는 서버에는 서버파일의 이름을 index.js로 함
+
+express 라이브러리 설치
+터미널에서 
+npm install express
+
+그후 bbs폴더에서 직접 index.js로 파일 생성.
+index.js파일에서 app이라는 개체를 만든다
+const express = require('express');
+const app = express();
+
+app.listen(포트번호, 콜백함수); (콜백함수 = 함수안에 함수가 들어가는 것)
+app.listen(3000, function(요청, 응답){
+
+})
+
+node.js 서버오픈
+터미널에서
+node index.js
+
+-------------------------------------------------------------------------------
+
+list라는 수업진행용 서버폴더 생성
+
+-------------------------------------------------------------------------------
+
+DataBase의 발전순서
+1. 계층형(나무형, 부모를 통해서만 접근)DB (구시대유물)
+2. 관계형DB(SQL) (현재 가장 보편적), 테이블형태로 만들어 관계를 맺는..복잡한 단점
+ => 절차적, SQL 언어
+3. 개체형DB (미래지향적)
+ => 비절차적, nonSQL 언어
+
+구글, mongodb atlas검색 후 가입 (try free)
+mongodb가 현재 가장 많이 사용되면 nonSQL형, 개체형DB언어
+
+admin, qwer1234로 데이터베이스 접근 id, password 
+
+몽고db에 접근할 수 있는 모듈설치
+터미널에서
+npm install mongodb
+그리고 몽고db 생성
+const MongoClient = require('mongodb').MongoClient;
+그리고 db접속
+MongoClient.connect(경로, 콜백(에러, db접속) );
+
+------------------------------------------------------------------------------
+
+schapp라는 수업진해용 서버폴더 생성
+
+package.json만들기 (package.json 은 환경설정 파일이다.)
+터미널에서
+npm init
+entry point => schApp.js
+
+express 라이브러리 설치
+터미널에서 
+npm install express
+
+몽고db에 접근할 수 있는 모듈설치
+터미널에서
+npm install mongodb
+
+데이터베이스 접근경로
+mongodb+srv://admin:qwer1234@cluster0.pi799.mongodb.net/schedule?retryWrites=true&w=majority
+
+get은 상관없지만 post는 응답을 항상 해주어야 다운이 안된다
+
+시작페이지 만들고 ㅇ
+write페이지 만들고 ㅇ
+네비게이션에서 write페이지로 이동 만들기 ㅇ
+서버로 자료를 전송할 수 있게 만들기
+
+db에 접속하고 mongodb에 자료를 저장하라
+
+
+
+
+
