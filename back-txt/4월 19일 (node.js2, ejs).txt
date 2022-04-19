@@ -17,12 +17,28 @@ package.json만들기 (package.json 은 환경설정 파일이다.)
 npm init
 entry point => server.js
 
+작업 할 파일 생성
+entry point로 지정한 server.js 이름으로 파일 만들기
+
 express 라이브러리 설치
 터미널에서 
 npm install express
+그 후에 
+const express = require('express');
+const app = express();
 
-작업 할 파일 생성
-entry point로 지정한 server.js 이름으로 파일 만들기
+bodyparser middlewear
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+serveropen
+app.listen(경로, ()=>{
+    console.log('port opened successfully');
+});
+터미널에서
+node entry point명
+즉, entry point명이 server.js라면
+node server.js
 
 몽고db에 접근할 수 있는 모듈설치
 터미널에서
