@@ -1,0 +1,34 @@
+1. UI구현 (웹표준? 접근성?)
+2. DB구축
+3. 서버 + DB활용
+
+viewport 가상해상도
+
+DataBase : 서로 관련된 자료의 집합
+DB 3대 기능 : 정의기능, 조작기능, 제어기능
+
+DBMS (DataBaseManagerSystem)
+DBMS 3대 언어 : 정의어, 조작어, 제어어
+
+ 1. 정의어 (Data Definition Language, DDL)
+   1.1 CREATE => 데이터베이스 오브젝트를 생성
+                      CREATE 오브젝트 오브젝트명
+                      CREATE DATABASE 학사DB
+   1.2 ALTER => 데이터베이스 오브젝트를 변경
+                      ALTER 오브젝트 변경사항
+                      ALTER TABLE 테이블명
+   1.3 DROP => 데이터베이스 오브젝트를 삭제
+	        DROP 오브젝트 오브젝트명
+                    DROP TABLE 테이블명
+
+ 2. 조작어 (DML)
+    2.1 SELECT => SELECT 필드명 FROM 테이블 WHERE 조건식
+    2.2 INSERT => INSERT INTO 테이블(필드...) VALUES(값...)
+    2.3 UPDATE => UPDATE 테이블 SET 변경필드=값... WHERE 조건
+    2.4 DELETE =>DELETE FROM 테이블 WHERE 조건
+
+ 3. 제어어 (DCL)
+  3.1 COMMIT (자료확정) => COMMIT;
+  3.2 ROLLBACK (원상복귀) => ROLLBACK;
+  3.3 GRANT (권한부여) => GRANT 옵션 TO 사용자;
+  3.4 REVOKE (권한회수) => REVOKE 옵션 ON 소유자. 테이블 FROM 사용자

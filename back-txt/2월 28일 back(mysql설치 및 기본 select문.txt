@@ -96,9 +96,10 @@ MySQL.com -> Downloads
 2.설치과정
 Choosing a setup type (developer default 체크) 
 -> 중간에 뭐 나오면 yes 후에 excute
+-> 설치중간 (Type and Networkin) port 확인 (기본값:3306)
 -> accounts and roles (패스워드 설정: root) 
 -> apply configutation 에서 excute
--> connect to server (passwoed 설정: root)
+-> connect to server (password 설정: root)
 
 
 User name: root
