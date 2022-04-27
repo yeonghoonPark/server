@@ -101,7 +101,19 @@ programfiles x 86에 mysql -> 'connector j 8.0' ->
  'bbs' 우클릭 'properties' 'java build path' -> 'libraries' -> 'modulepath' 
   -> add jars -> 경로를 아까 옮겨놓은 'lib'파일의  jdbc로 설정
 
+-------------------------------------------------------------------------------------------------
 
+10. webapp폴더에 index.jsp 파일 생성 후 테스트
+
+-------------------------------------------------------------------------------------------------
+
+11. DAO 라이브러리 삽입
+
+private Connection conn;
+private PreparedStatement pstmt;
+private ResultSet rs;
+
+Ctrl + Shift + O
 
 
 
