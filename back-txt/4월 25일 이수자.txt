@@ -32,3 +32,9 @@ DBMS 3대 언어 : 정의어, 조작어, 제어어
   3.2 ROLLBACK (원상복귀) => ROLLBACK;
   3.3 GRANT (권한부여) => GRANT 옵션 TO 사용자;
   3.4 REVOKE (권한회수) => REVOKE 옵션 ON 소유자. 테이블 FROM 사용자
+
+
+
+
+
+

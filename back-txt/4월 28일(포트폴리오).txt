@@ -1,0 +1,68 @@
+금요일 오전까지 포트폴리오 기획서 제출
+
+---------------------------------------------------------------------------------
+
+template 활용?
+
+깃허브를 이용하여 포트폴리오 작성시 READEME 파일 꼭 기재할 것
+markDown언어
+# 1개는 h1
+# 2개는 h2
+# 3개는 h3 의 개념
+
+포트폴리오 아이템 먼저 준비
+megabox
+paikdabang
+travel
+hollys
+
+1. github 정리하기, 
+ 1.1- 자료 집에 백업.
+ 1.2- megabox, hollys, paikdabang, indigo, travel
+
+
+github를 포트폴리오로 만들지 or 인덱스페이지를 만들지
+
+---------------------------------------------------------------------------------
+
+javaScript 플러그인 모음
+    https://michalsnik.github.io/aos/
+    https://darkmodejs.learn.uno/
+    https://kingsora.github.io/OverlayScrollbars/#!overview
+    https://ykob.github.io/fullscreen-slider/
+    https://simpleparallax.com/
+    https://focusoverlay.js.org/
+    https://swiperjs.com/
+    https://icons8.com/line-awesome
+
+jQuery 플러그인 모음
+    https://alvarotrigo.com/fullPage/
+    https://bxslider.com/examples/image-slideshow-captions/
+    http://git.blivesta.com/animsition/
+    https://github.com/carhartl/jquery-cookie?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library
+    https://github.com/kswedberg/jquery-smooth-scroll
+    https://jquerymodal.com/
+    https://github.com/kottenator/jquery-circle-progress
+    https://github.com/alvarotrigo/multiscroll.js
+    https://github.com/nckprsn/scrollme
+    https://github.com/thompsonemerson/zoomove
+
+---------------------------------------------------------------------------------
+
+https://brunch.co.kr/@skykamja24/640
+
+브라우저 동작 방식
+ES6 문법과 ES5 문법의 차이점
+기본 데이터 형태의 프로토타입 메서드
+호이스팅 및 스코프 개념
+HTTP 통신 메서드 및 상태코드
+
+리엑트
+useState와 useEffect의 개념, 각 파라미터가 어떤 의미를 가지는지 
+대표적인 상태관리 도구부터 왜 상태관리 도구를 사용하는지, 어떤 식으로 동작하는지
+
+코드를 카피하지말고 쓰고싶은 사람
+
+
+
+

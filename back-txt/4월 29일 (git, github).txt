@@ -1,0 +1,140 @@
+●git 설치
+구글에서 git 검색
+
+다운로드
+설치시 전부 next
+
+git bash 사용, 리눅스 기반이라 명령어가 다르다.
+
+----------------------------------------------------------------------------------
+●환경설정 (다운받고 한 번만 하면 됨)
+
+이름설정
+git config --global user.name "유저네임"
+git config --global user.name "yeonghoon Park"
+
+이메일설정
+git config --global user.email "이메일@도메인.com"
+git config --global user.email "huklmnj2@naver.com"
+
+확인
+git config --list
+git config user.name
+git config user.email
+
+----------------------------------------------------------------------------------
+●깃 저장소 생성 (프로젝트 단위, 한 프로젝트당 1번)
+
+환경설정 후에 테스트할 프로젝트 생성 후 vs코드에서 새터미널
+
+터미널에서 gitbash로 설정
+git을 사용하게되면 폴더를 폴더 개념보다는 레파지토리라고 부른다
+레파지토리 안에는 브렌치라는게 존재한다 (master...)
+
+git status = 현재 상태
+
+gitbash로 설정한 터미널에서
+git init
+
+----------------------------------------------------------------------------------
+●git 커밋('저장한다'는 의미) (프로젝트를 진행하면서 여러번 함)
+저장의 의미보다는 시점이라는 개념
+
+git add 파일
+=> git add index.html
+=> git add *
+=> git add .
+등등...
+
+저장하기
+git commit -m "메세지"
+=> git commit -m "version1"
+
+저장된 로그파일 확인하기
+git log
+
+로그가 많아서 안보일시 enter하면 차례로 나오고 너무 많다면 q연타시 탈출
+
+----------------------------------------------------------------------------------
+●git 복원/복귀
+
+git checkout "gitID"
+=> git checkout 181c5afb11fde9864130d8bffaea74bebf46197d
+
+다시 앞으로 가고 싶다면
+git checkout master
+
+git log --all = 모든버전을 로그로 확인
+
+----------------------------------------------------------------------------------
+git branch
+=현재 브렌치의 위치가 나옴
+
+git checkout -b 브렌치명
+=> git checkout -b main
+여기서 -b는 그 브렌치로 main이라는 브렌치를 생성하면서 이동한다
+(현재위치에서 main이라는 나뭇가지로 뻗은 개념)
+
+----------------------------------------------------------------------------------
+●원격(remote)레파지토리에 푸쉬(push)
+
+git remote add origin "url"
+=> git remote add origin https://github.com/yeonghoonPark/gitproject.git
+
+git remote -v
+
+git push -u origin master
+(-u를 써주면 그 url이 변하지 않는 이상 그 후부터는 origin master을 생략해도된다)
+
+예전 github의 마스터브렌치가 master이었는데 main으로 바뀌었다,
+즉, main이란 브렌치를 만들어서 보내야한다?
+
+main이라는 브렌치로 이동하기
+git branch -m main
+만약 존재한다면
+git checkout main
+
+----------------------------------------------------------------------------------
+github에서 레파지토리 생성 후에 파일 업로드 부분에 다 나와있음
+
+0. remote repagitoy 생성
+1. git init
+2. 파일작성
+3. git add 파일
+4. git branch -m main
+5. git commit -m "메세지"
+6. git remote add origin 원격저장주소
+7. git push -u origin main(처음) / git push(나중)
+
+----------------------------------------------------------------------------------
+깃허브에서 파일 당겨오는 법
+
+git pull origin main
+
+
+----------------------------------------------------------------------------------
+협업
+
+어떤 사람의 것을 '클론' 즉, 가져오기
+
+git clone [url] [로컬레파지토리]
+git clone https://github.com/pam7464/remote-git.git lee(폴더명)
+
+작업 후
+git add .
+git commit -m "메시지"
+
+git log로 확인 후
+
+푸쉬하기 전에 반드시 할 것 (main브렌치로 올리게 되면 퇴사당함)
+git checkout -b park
+(park라는 브렌치를 만들고 park브렌치로 이동하라는 의미)
+(즉, -b는 브렌치를 생성한다는 의미)
+그리고
+git push origin park
+
+
+
+
+
+
