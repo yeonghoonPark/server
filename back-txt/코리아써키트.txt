@@ -1,0 +1,19 @@
+header color : #1d8519
+
+인재채용, SITE color : #ffffc0
+
+skip-menu의 z-index : 9999
+sub-contaier의 z-index : 9997
+language>ul의 z-index : 9996
+
+1200px
+1024px
+960px
+768px
+480px
+
+
+font-awesome = 6.1.1
+
+
+

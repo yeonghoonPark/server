@@ -9,6 +9,8 @@ git bash 사용, 리눅스 기반이라 명령어가 다르다.
 ----------------------------------------------------------------------------------
 ●환경설정 (다운받고 한 번만 하면 됨)
 
+설치 된 git bash에서
+
 이름설정
 git config --global user.name "유저네임"
 git config --global user.name "yeonghoon Park"
@@ -78,21 +80,24 @@ git checkout -b 브렌치명
 ----------------------------------------------------------------------------------
 ●원격(remote)레파지토리에 푸쉬(push)
 
-git remote add origin "url"
-=> git remote add origin https://github.com/yeonghoonPark/gitproject.git
-
-git remote -v
-
-git push -u origin master
-(-u를 써주면 그 url이 변하지 않는 이상 그 후부터는 origin master을 생략해도된다)
-
-예전 github의 마스터브렌치가 master이었는데 main으로 바뀌었다,
-즉, main이란 브렌치를 만들어서 보내야한다?
-
 main이라는 브렌치로 이동하기
 git branch -m main
 만약 존재한다면
 git checkout main
+
+
+git에 'url' 주소 추가
+git remote add origin 'url'
+=> git remote add origin https://github.com/yeonghoonPark/gitproject.git
+
+주소 확인
+git remote -v
+
+git push -u origin main
+(-u를 써주면 그 url이 변하지 않는 이상 그 후부터는 origin master을 생략해도된다)
+
+예전 github의 마스터브렌치가 master이었는데 main으로 바뀌었다,
+즉, main이란 브렌치를 만들어서 보내야한다?
 
 ----------------------------------------------------------------------------------
 github에서 레파지토리 생성 후에 파일 업로드 부분에 다 나와있음
@@ -110,7 +115,6 @@ github에서 레파지토리 생성 후에 파일 업로드 부분에 다 나와
 깃허브에서 파일 당겨오는 법
 
 git pull origin main
-
 
 ----------------------------------------------------------------------------------
 협업
