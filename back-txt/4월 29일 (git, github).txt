@@ -83,7 +83,7 @@ git checkout -b 브렌치명
 main이라는 브렌치로 이동하기
 git branch -m main
 만약 존재한다면
-git checkout main
+git checkout maingit
 
 
 git에 'url' 주소 추가
@@ -137,8 +137,31 @@ git checkout -b park
 그리고
 git push origin park
 
+----------------------------------------------------------------------------------
 
+5월 4일 git2
 
+yeonghoon.github.io(깃폴더) 로 만들고 파일 업로드 전에
+= 레파지토리의 이름을 이렇게 생성하면 이것이 인덱스페이지가 된다 
+ 즉, 루트로 인식한다
 
+레파지토리 생성 후
+1. git init
+2. git add .
+3. git commit -m "메세지"
+---------------------------- 여기까지가 로컬git, 이후로는 리모트git
+4. git branch -m main
+5. git remote add origin 원격저장주소
+7. git push -u origin main(처음) / git push(나중)
 
+-----------------------------
+
+그동안 에러가 났던 것은 나의 깃로컬과 깃리모트의 파일이 서로 
+달랐기 때문에 에러가 났던 것, 이를 해결하기 위해서는 파일을
+당겨오거나 또는 강제로 푸쉬하는 방법이 있다
+
+1. 파일을 당겨오는 법 = git pull origin main
+2. 강제로 푸쉬 하는 법 = git push origin +main
+
+-----------------------------
 

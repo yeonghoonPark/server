@@ -1,19 +1,23 @@
+font-awesome = 6.1.1
+
 header color : #1d8519
 
 인재채용, SITE color : #ffffc0
 
 skip-menu의 z-index : 9999
-sub-contaier의 z-index : 9997
-language>ul의 z-index : 9996
+header의 z-index : 9950
+sub-container의 z-index : 9800
+nav-container의 z-index : 9700
+nav-container button 의 z-index : 9750
+language>ul의 z-index : 9900
+tm-nav의 z-index : 9600
+
 
 1200px
 1024px
 960px
 768px
 480px
-
-
-font-awesome = 6.1.1
 
 
 
