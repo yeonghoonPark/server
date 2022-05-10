@@ -8,9 +8,10 @@ skip-menu의 z-index : 9999
 header의 z-index : 9950
 sub-container의 z-index : 9800
 nav-container의 z-index : 9700
-nav-container button 의 z-index : 9750
+nav-container button 의 z-index : 9850
 language>ul의 z-index : 9900
 tm-nav의 z-index : 9600
+slide-control의 z-index : 8000
 
 
 1200px
